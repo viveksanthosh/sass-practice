@@ -1,0 +1,7 @@
+$colorList: ('small': 4px, 'medium': 8px, 'large': 16px);
+
+@each $label, $size in $colorList {
+    .#{$label}Class {
+        font-size: $size;
+    }
+}
