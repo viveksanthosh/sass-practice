@@ -1,0 +1,7 @@
+$colorList: ('red', 'green', 'pink');
+
+@each $label in $colorList {
+    .#{$label}Class {
+        color: $label;
+    }
+}
