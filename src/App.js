@@ -9,15 +9,22 @@ const Tab = ({ name }) => <a>
 </a>
 
 const App = () => (
-  <main>
-    <nav>
-      <ul>
-        <Tab name='Home' />
-        <Tab name='About' />
-        <Tab name='Contact Us' />
-      </ul>
-    </nav>
-  </main>
+  <>
+    <header>
+      <nav>
+        <ul>
+          <Tab name='Home' />
+          <Tab name='About' />
+          <Tab name='Contact Us' />
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p className='smallText'>Small Text</p>
+      <p className='mediumText'>Medium Text</p>
+      <p className='bigText'>Big Text</p>
+    </main>
+  </>
 );
 
 export default App;
