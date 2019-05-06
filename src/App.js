@@ -2,11 +2,22 @@ import './App.scss';
 
 import React from 'react';
 
+const Tab = ({ name }) => <a>
+  <li>
+    {name}
+  </li>
+</a>
+
 const App = () => (
-  <div>
-    <div>Welcome to Razzle.</div>
-    <div className="info">Hot reload enabled!!</div>
-  </div>
+  <main>
+    <nav>
+      <ul>
+        <Tab name='Home' />
+        <Tab name='About' />
+        <Tab name='Contact Us' />
+      </ul>
+    </nav>
+  </main>
 );
 
 export default App;
